@@ -15,16 +15,17 @@ import random
 import string
 import sys
 import time
-
+from colorama import init,Fore
+init()
 from banner import banner
 
 
 class colors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
+    HEADER = Fore.WHITE
+    OKBLUE = Fore.BLUE
+    OKGREEN = Fore.GREEN
+    WARNING = Fore.RED
+    FAIL = Fore.RED
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
